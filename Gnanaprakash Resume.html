@@ -1,0 +1,598 @@
+
+    <html>
+    <head>
+        <title>Gnanaprakash Resume</title>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body{
+                margin-top: 2%;
+                padding: 0;
+                margin-left: 1%;
+                margin-right: 1%;
+                font-family: "Times New Roman", Times, serif;
+               
+            }
+
+            .gnana_profile{
+                border: 1px solid;
+
+            }
+
+            /* Profile Info*/
+            .profile_info{
+                margin-top: 2%;
+                width:100%;
+                height: 180px;
+                
+            }
+            .profile_info_left{
+                width: 48%;
+                float: left;
+                display: inline-block;
+                margin-left: 2%;
+                font-weight: 70px;
+            }
+            .profile_info_right{
+                float: right;
+                height:60px;
+                margin-right: 2%;
+            }
+
+             .profile_info_left h4:first-of-type {
+                color : green;
+            }
+            .profile_info_right img{
+                width:150px;
+                height: 170px;
+                border-radius: 50%;
+
+            }
+            .profile_info_right img:hover{
+                width: 180px;
+                height: 180px;
+                cursor: pointer;
+                transition: all 1s;
+            }
+           
+            .profile_info a{
+                font-size: 20px;
+            }
+
+            hr{
+                border: 1px solid green;
+                margin-right: 2%;
+                margin-left: 2%;
+            }
+
+
+            /*Career Objective*/
+
+            .career_objective{
+                height: 90px;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            .career_objective_left h4{ 
+                font-weight: bold;
+            }
+
+            .career_objective_right h4{
+                margin-left: 10%;
+                width: 90%;
+
+            }
+
+            /* academic qualification*/
+
+            .academic_qualification{
+                margin-left: 2%;
+                margin-right: 2%;
+                height: 280px;
+            }
+
+            .academic_qualification h4{
+                font-weight: bold;
+            }
+
+            .academic_qualification table{
+                width: 100%;
+                height: 220px;
+
+            }
+
+            .academic_qualification table, th, td {
+                border:1px solid skyblue;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            /*Skill set*/
+
+            .personal_skil{
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 96%;
+            }
+            .personal_skil h4{
+                font-weight: bold;
+            }
+            ol.skil_set{
+                list-style-type: inherit;
+                font-size: 18px;
+                margin-left: 10%;
+            }
+
+            /*project*/
+
+            .project{
+                margin-top: 2%;
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 96%;
+            }
+
+            .project h4{
+                font-weight: bold;
+            }
+
+            .project p{
+                font-size: 18px;
+                margin-left: 7%;
+                width: 93%;
+            }
+
+            /*personal detail*/
+
+             .personal_detail{
+                margin-top: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 96%;
+            }
+
+            .personal_detail h4{
+                font-weight: bold;
+            }
+            .grid-container {
+                  display: grid;
+                  grid-template-columns: auto auto;  
+                 
+                }
+            .grid-item {
+                  border: 1px solid skyblue;
+                  font-size: 18px;
+                  text-align: center;
+
+             }
+
+             /*declaration*/
+
+             .declaration{
+                margin-top: 2%;
+                width: 100%;
+                
+             }
+
+             .declaration h4{
+                font-weight: bold;
+                text-align: center;
+             }
+
+             .declaration p{
+                font-size: 18px;
+                text-align: center;
+             }
+
+             /*signature*/
+
+             .signature{
+                margin-top: 2%;
+                margin-left: 2%;
+                margin-right: 2%;
+                height: 63px;
+}
+
+             .signature_left{
+                width: 48%;
+                float: left;
+                font-size: 18px;
+             }
+
+             .signature_right{
+                float: right;
+                font-size: 18px;
+                display: inline;
+             }
+
+
+
+           
+            /*Media Query*/
+
+
+             /*Tablets, Ipads */
+            @media (min-width: 481px) and (max-width: 767px) {
+
+                /* Career Objective */
+
+                 .career_objective{
+                     height: 120px;
+                }
+
+                 .academic_qualification table,th,td{
+                    font-size: 16px;       
+                     }
+               
+            }
+
+
+            /*Mobile*/
+             @media (max-width: 480px) {
+
+                h4{
+                    font-size: 16px;
+                }
+
+                /*Profile Info*/
+
+                .profile_info{
+                    height: 375px;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -moz-box-orient: vertical;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    /* optional */
+                    -webkit-box-align: start;
+                    -moz-box-align: start;
+                    -ms-flex-align: start;
+                    -webkit-align-items: flex-start;
+                    align-items: flex-start;
+                 
+                }
+
+                .profile_info_left{
+                    width: 76%;
+                    margin-left: 13%;
+                    margin-right: 10%;
+                    height :160px;
+                    -webkit-box-ordinal-group: 2;
+                    -moz-box-ordinal-group: 2;
+                    -ms-flex-order: 2;
+                    -webkit-order: 2;
+                    order: 2;
+                                }
+               .profile_info_right{
+                    width: 70%;
+                    margin-left: 20%;
+                    margin-right: 10%;
+                    height: 180px;
+                    -webkit-box-ordinal-group: 1;
+                    -moz-box-ordinal-group: 1;
+                    -ms-flex-order: 1;
+                    -webkit-order: 1;
+                    order: 1;                    
+               }
+
+               .profile_info_right img{
+                     margin-left: 10px;
+               }
+
+                .profile_info_left h4{
+                    font-size: 16px;
+                }
+
+               .profile_info_left h4:first-of-type {
+                         margin-left: 20%;
+                }
+                .profile_info_left h4:nth-of-type(2){
+                    font-size: 12px;
+                }
+
+                .profile_info_left h4:last-of-type {
+                         margin-left: 25%;
+                }
+
+
+
+                /* career objective */
+
+                .career_objective{
+                    height: 160px;
+                }
+
+
+                .academic_qualification table,th,td{
+                    font-size: 10px;
+                    
+                 }
+
+                 /*skil set*/
+
+                  ol.skil_set{
+                    font-size: 16px;
+                    margin-left: 2%;
+                    margin-right: 2%;
+                    width: 96%;
+
+                
+            }
+                /*project*/
+
+                 .project p{
+                    font-size: 16px;
+               
+            }
+
+                /*personal detail*/
+
+              .personal_detail{
+                margin-top: 8%;
+            }
+              .grid-item{
+                font-size: 16px;
+            }
+
+
+            /*declaration*/
+              .declaration{
+                margin-top: 6%;
+             }
+
+             .declaration p{
+                font-size: 16px;
+             }
+
+
+             /*signature*/
+
+             .signature_left{
+                font-size: 16px;
+                width: 50%;
+                float: left;
+             }
+
+             .signature_right{
+                font-size: 16px;
+                float: right;
+                display: inline-block;
+             }
+
+             .signature{
+                margin-top: 4px;
+                height: 73px;
+             }
+
+            }
+
+              
+            /* Portrait mode */
+
+
+            @media (min-width: 768px) and (max-width: 1024px){
+
+               .career_objective{
+                    height: 95px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+    <div class="gnana_profile">
+        <!-- profile info-->
+
+        <div class = "profile_info">
+            <div class = "profile_info_left">
+                <h4>GNANAPRAKASH K</h4>
+                <h4>5/307-D,Vellakallkadu,Thokkavadi,Thiruchengode,Namakkal-637215.</h4>
+                <a href = "mailto: 477gnanaprakash@gmail.com">477gnanaprakash@gmail.com</a>
+                
+                
+                <h4><a href="tel:9791210757">9791210757</a></h4>
+
+            </div>
+            <div class = "profile_info_right">
+                 <img src="C:\Users\477gn\OneDrive\Desktop\Resume\Gnanaprakash.jpg">
+            </div>
+
+        </div>
+        <hr>
+
+
+        <!-Career Objective-->
+
+        <div class = "career_objective">
+                <div class = "career_objective_left">
+                    <h4>CAREER OBJECTIVE</h4>
+                </div>
+                
+                <div class = "career_objective_right">
+                    <h4>To serve as an IT professional in a competitive environment where I can utilise my technical and interpersonal skills to serve the organisation and enhance the same.</h4>
+                </div>
+        </div>
+
+
+        <!-- Academic Qualification -->
+
+        <div class = "academic_qualification">
+            <h4>ACADEMIC QUALIFICATION</h4>
+            <table>
+              <tr>
+                <th>Name of the Instituion Studied(School/College)</th>
+                <th>Degree</th>
+                <th>Board</th>
+                <th>Percentage/CGPA</th>
+                <th>Year</th>
+              </tr>
+              <tr>
+                <td>K S Rangasamy College of Technology </td>
+                <td>B.E(CSE)</td>
+                <td>Autonomous</td>
+                <td>8.9 CGPA</td>
+                <td>2021-2024</td>
+              </tr>
+              <tr>
+                <td>KSR Matric Higher Secondary School</td>
+                <td>HSC</td>
+                <td>State Board</td>
+                <td>77%</td>
+                <td>2019-2020</td>
+              </tr>
+               <tr>
+                <td>KSR Matric Higher Secondary School</td>
+                <td>SSLC</td>
+                <td>State Board</td>
+                <td>95.4%</td>
+                <td>2017-2018</td>
+              </tr>
+            </table>
+        </div>
+
+        <!--Skill Set-->
+        <div class="personal_skil">
+            <h4>PERSONAL SKILLS</h4>
+            <ol class="skil_set">
+                <li>Problem Solving </li>
+                <li>Time Management</li>
+                <li>Creativity</li>
+                <li>Analytical Skill</li>
+            </ol>
+
+            <br>
+
+            <h4>TECHNICAL SKILLS</h4>
+            <ol class="skil_set">
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>jQuery</li>
+                <li>Spring</li>
+                <li>Sql</li>
+                <li>MongoDB</li>
+                <li>Word</li>
+                <li>Excel</li>
+            </ol>
+              <br>
+
+            <h4>DEPARTMENT SKILLS</h4>
+            <ol class="skil_set">
+                <li>PCB Design</li>
+                <li>Proteus Software</li>
+                <li>Component Soldering</li>
+            </ol>
+
+              <br>
+
+            <h4>MINI PROJECT</h4>
+            <ol class="skil_set">
+                <li>Line Follower Robot using Arduino</li>
+                <li>Hairpin Bend Vehicle Collision Preventing Tracker</li>
+            </ol>
+
+              <br>
+
+             <h4>EXTRA CURRICULAR ACTIVITIES</h4>
+            <ol class="skil_set">
+                <li>I completed two days of training in effective public speaking.</li>
+                <li>I completed a one-month training in yoga.</li>
+            </ol>
+
+              <br>
+
+             <h4>AREA OF INTERESTS</h4>
+            <ol class="skil_set">
+                <li>Digital Communication</li>
+                <li>Signals and Systems</li>
+            </ol>
+
+              <br>
+
+             <h4>STRENGTHS</h4>
+            <ol class="skil_set">
+                <li>Social Adaptation</li>
+                <li>Smart as well as Hard Worker</li>
+                <li>Self Motivation</li>
+                <li>Dedication towards work</li>
+            </ol>
+
+              <br>
+
+             <h4>HOBBIES</h4>
+            <ol class="skil_set">
+                <li>Reading Books</li>
+                <li>Playing Cricket</li>
+                <li>Listening Music</li>
+            </ol>
+
+        </div>
+
+        <br>
+
+        <!-- Project-->
+
+        <div class = "project">
+                    <h4>PROJECT</h4>
+                <div class = "final_year_project">
+                    <p>Smart Door Lock System Using Internet of Things(IOT) and Surveillance Camera.</p>
+                </div>
+        </div>
+
+
+        <!--Personal Details-->
+
+        <div class = "personal_detail">
+                    <h4>PERSONAL DETAILS</h4>
+
+                <div class="grid-container">
+                  <div class="grid-item">Name</div>
+                  <div class="grid-item">Gnanaprakash K</div>
+                  <div class="grid-item">Date of Birth</div>  
+                  <div class="grid-item">04/08/2001</div>
+                  <div class="grid-item">Gender</div>
+                  <div class="grid-item">Male</div>  
+                  <div class="grid-item">Father's Name</div>
+                  <div class="grid-item">Kumaravel S</div>
+                  <div class="grid-item">Mother's Name</div>  
+                  <div class="grid-item">Valarmathi K</div>
+                  <div class="grid-item">Address</div>
+                  <div class="grid-item">5/307-D, Vellakallkadu, Thokkavadi, Thiruchengode, Namakkal-637215</div>  
+                  <div class="grid-item">Language Known</div>
+                  <div class="grid-item">Tamil (Read,Write,Speak)<br>English (Read,Write,Speak)</div>
+                  
+            </div>
+        </div>
+
+        <!-- declaration-->
+        <div class="declaration">
+            <h4>DECLARATION</h4>
+
+            <p>I hereby clarify that the above statements mentioned are true to the best of my knowledge and belief.</p>
+        </div>
+
+        <!--signature-->
+
+        <div class = "signature">
+            <div class = "signature_left">
+                <p>Place : Namakkal,</p>
+                <p>Date :_______.</p>
+            </div>
+            <div class = "signature_right">
+                <span>GNANAPRAKASH K</span>
+            </div>
+        </div>
+
+    </div>
+    </body>
+
+    </html>
